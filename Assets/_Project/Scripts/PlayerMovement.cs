@@ -3,16 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : WalkingCreature
 {
-    Transform tf;
-
     [SerializeField] float horizontalSpeed;
-    int direction = 1;
-
-    void Awake() {
-        tf = GetComponent<Transform>();
-    }
 
     void Update() {
         AutoMove();
@@ -32,16 +25,11 @@ public class PlayerMovement : MonoBehaviour
         return horizontalSpeed * direction;
     }
 
-    void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.CompareTag("Wall"))
-            HitWall();
+    public void OnJump() {
+        HandleJumping();
     }
 
-    void HitWall() {
-        DirectTowardsCenter();
-    }
-
-    void DirectTowardsCenter() {
-        direction = -Math.Sign(tf.position.x);
+    void HandleJumping() {
+        print("Jump!");
     }
 }
