@@ -11,6 +11,12 @@ TextureImporter:
   - first:
       213: -7232886063090220694
     second: Player
+  - first:
+      213: -4086908530402815338
+    second: JumpTimer
+  - first:
+      213: 4708456652105541662
+    second: Ticker
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -152,7 +158,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
+        y: 96
         width: 64
         height: 32
       alignment: 0
@@ -173,7 +179,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -194,7 +200,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -206,6 +212,48 @@ TextureImporter:
       bones: []
       spriteID: a6142a47270af9b90800000000000000
       internalID: -7232886063090220694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpTimer
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 128
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69293df48526847c0800000000000000
+      internalID: -4086908530402815338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ticker
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 32
+        width: 2
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18631de06cc75140800000000000000
+      internalID: 4708456652105541662
       vertices: []
       indices: 
       edges: []
