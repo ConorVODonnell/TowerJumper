@@ -4,7 +4,13 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 5821746002290637740
-    second: Proto_Tower_0
+    second: Room
+  - first:
+      213: -7277261272015175839
+    second: Enemy
+  - first:
+      213: -7232886063090220694
+    second: Player
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -142,7 +148,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Proto_Tower_0
+      name: Room
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +156,56 @@ TextureImporter:
         width: 64
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 6, z: 3, w: 3}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: cab7517e42ffac050800000000000000
       internalID: 5821746002290637740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 3, z: 3, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ff3dffd69f10b90800000000000000
+      internalID: -7277261272015175839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 2, z: 2, w: 2}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6142a47270af9b90800000000000000
+      internalID: -7232886063090220694
       vertices: []
       indices: 
       edges: []
