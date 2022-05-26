@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : WalkingCreature
+public class Enemy : WalkingCreature, IPunchable
 {
     [SerializeField] float horizontalSpeed;
     [SerializeField] float minWaitTime = 1;
     [SerializeField] float maxWaitTime = 3;
 
+    [SerializeField] bool goRight, goLeft;
 
     void Start() {
         StartCoroutine(RandomDirection());
@@ -16,7 +17,7 @@ public class Enemy : WalkingCreature
     IEnumerator RandomDirection() {
         while (true) {
             yield return new WaitForSeconds(RandomWaitTime());
-            ChangeDirection();
+            //ChangeDirection();
         }
     }
 
@@ -39,6 +40,12 @@ public class Enemy : WalkingCreature
     }
 
     float HorizontalMovement() {
+        if (goRight) direction = 1;
+        if (goLeft) direction = -1;
         return horizontalSpeed * direction;
+    }
+
+    public void GetPunched() {
+        print("You just hit me!");
     }
 }

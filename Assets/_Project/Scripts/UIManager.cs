@@ -10,6 +10,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] Slider slider;
     [SerializeField] float maxTimeOnFloor = 6;
 
+    [SerializeField] TMP_Text punchCounter;
+
     void Awake() {
         slider.maxValue = maxTimeOnFloor;
     }
@@ -21,6 +23,9 @@ public class UIManager : MonoBehaviour
 
     void UpdateSlider(float timeOnFloor) {
         slider.value = timeOnFloor;
+    }
 
+    public void UpdatePunchCounter(int punchesRemaining) {
+        punchCounter.text = punchesRemaining.ToString();
     }
 }
